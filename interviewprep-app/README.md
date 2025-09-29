@@ -1,3 +1,40 @@
+# Interview Prep App
+
+Minimal full-stack starter for Interview Prep with Next.js, Prisma and Tailwind.
+
+Setup
+
+1. Install dependencies
+
+```bash
+npm install
+```
+
+2. Set DATABASE_URL in `.env` (Postgres)
+
+3. Generate Prisma client and push schema
+
+```bash
+npm run db:generate
+npm run db:push
+# or use migrate if you prefer
+npm run db:migrate
+```
+
+4. Run dev server
+
+```bash
+npm run dev
+```
+
+API endpoints
+
+- `GET /api/topics` - list topics
+- `POST /api/topics` - create topic (body: { title, content })
+
+Notes
+
+This is a starter. You may need to run `prisma generate` after editing `schema.prisma` to update TypeScript types.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
